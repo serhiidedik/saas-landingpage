@@ -13,18 +13,17 @@ export function Footer() {
           >
             <img src="/logo.svg" className="mr-3" />
             <Typography className="!text-white !text-base font-medium ">
-              Pandem
+              GIF Tournament
             </Typography>
           </Link>
         </div>
         <div className="flex max-w-fit items-center gap-x-4">
           <Link
-            href="https://map.sistilli.dev/public/coding/SaaS+Boilerplate"
-            target="_blank"
+            href="/demo"
             className="pointer block w-fit flex-1"
           >
             <Typography variant="p" className="w-max">
-              Book a demo
+              Demo
             </Typography>
           </Link>
           <Link

@@ -20,9 +20,9 @@ export function Header({ className }: SidebarProps) {
   const pathname = usePathname()
   const items = [
     {
-      href: 'https://map.sistilli.dev/public/coding/SaaS+Boilerplate',
-      title: 'Book a demo',
-      openInNewTab: true
+      href: '/top',
+      title: 'Whose GIF is better?',
+      openInNewTab: false
     }
     // { href: '#pricing', title: 'Features' },
     // {
@@ -35,23 +35,17 @@ export function Header({ className }: SidebarProps) {
     <Link href="/" className="pointer flex items-center">
       <img src="/logo.svg" className="mr-3" />
       <Typography className="!text-white !text-base font-medium ">
-        Pandem
+        GIF Tournament
       </Typography>
     </Link>
   )
 
   const getAuthButtons = () => (
     <div className="flex gap-3 items-center">
-      <Link
-        href="https://map.sistilli.dev/public/coding/SaaS+Boilerplate"
-        target="_blank"
-      >
+      <Link href="/sign-in">
         <Typography variant="p">Login</Typography>
       </Link>
-      <Link
-        href="https://map.sistilli.dev/public/coding/SaaS+Boilerplate"
-        target="_blank"
-      >
+      <Link href="/sign-up">
         <Button size="tiny" color="ghost">
           <Typography variant="p" className="text-black">
             Sign Up
